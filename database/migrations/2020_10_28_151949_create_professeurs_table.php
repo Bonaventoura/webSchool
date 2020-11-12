@@ -20,7 +20,11 @@ class CreateProfesseursTable extends Migration
             $table->string('sexe');
             $table->string('lieu_nssce')->nullable();
             $table->date('date_nssce')->nullable();
-            
+            $table->string('adresse')->nullable();
+            $table->string('nationalite')->nullable();
+            $table->string('numero_tel');
+            $table->text('photo')->nullable();
+            $table->string('code');
             $table->timestamps();
         });
     }
